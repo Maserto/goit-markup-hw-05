@@ -19,7 +19,9 @@ li {
 .link {
   color: #757575;
 }
-.link:hover, .link:focus {color: var(--accent-color)}
+.link:hover, .link:focus {color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .container { 
   width: 1200px;
@@ -515,6 +517,7 @@ color: #757575;}
 
   padding-top: 94px;
   padding-bottom: 94px;
+  z-index: 1;
 }
 .examples-list {
   display: flex;
@@ -526,6 +529,7 @@ color: #757575;}
 .examples li {
 
   margin-right: 30px;
+  
 }
 /* clean geometry */
 .examples  li:last-child {
@@ -557,6 +561,7 @@ align-items: center;
 justify-content: center;
 background-color: 
 rgba(47, 48, 58, 0.8);
+
 
   }
     .examples-description {
@@ -784,7 +789,7 @@ line-height: calc(24/14);
 letter-spacing: 0.03em;
 color: var(--white-text-color)}
 
-address {
+.address {
   margin-top: 20px;
 }
 .basement-contacts {
@@ -794,6 +799,7 @@ margin-bottom: 0;
 }
 .basement-contacts-item {
   margin-top: 9px;
+  
 }
 .basement-contacts:first-child{
   margin-top: 0;
@@ -879,8 +885,7 @@ color: #FFFFFF;
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  
-  
+    
 }
 
 .modal {
@@ -893,6 +898,7 @@ color: #FFFFFF;
   min-width: 528px;
   
   background-color: #fff;
+  z-index: 99;
 }
 
 .modal-button {
@@ -901,8 +907,6 @@ top: 8px;
 right: 8px;
 display: flex;
   align-items: center;
-
-  /* background-color: #fff; */
 
   width: 30px;
   height: 30px;
